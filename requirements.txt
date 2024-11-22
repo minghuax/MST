@@ -1,0 +1,10 @@
+h5py
+PyYAML
+numpy
+pandas
+gudhi
+scipy
+scikit-learn
+torch==1.13.0
+torch-geometric==2.3.1
+transformers

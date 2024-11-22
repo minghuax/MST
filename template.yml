@@ -1,0 +1,44 @@
+parallel: True
+device_id: 0
+
+dataset: SYNTHETIC
+pd_mode: ms # ms/multisets/set/sets
+pd_model: Transformer # Transformer
+pooling: mab_q
+
+use_mult: True
+use_pd: True
+rel_pd: False
+ext_pd: True
+ord_pd: False
+use_f: False
+
+n_classes: 11 # 2,3,5,11 
+
+use_cluster: False
+cluster_method: DBSCAN # KMeans or DBSCAN
+kmeans_n_clusters: 5
+dbscan_eps: 0.1
+
+n_splits: 10
+random_state: 0
+batch_size: 128
+
+num_out: 64
+num_hiddens: 64
+ffn_num_hiddens: 64
+num_heads: 2
+num_inds: 1
+dropout: 0
+use_bias: False
+pre_ln: False
+equiv: isab  # sab/isab
+num_equiv: 2
+num_queries: 4
+mult_in_equiv: False
+
+lr: 0.01
+n_epochs: 100
+warmup_epochs: 10
+adam_beta: 0.9
+runs: 5
